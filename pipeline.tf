@@ -32,7 +32,7 @@ resource "aws_codepipeline" "pipeline" {
 
     artifact_store {
         type="S3"
-        location = aws_s3_bucket.s3bucket-cicd.id
+        location = aws_s3_bucket.s3bucketcicd.id
     }
 
     stage {
